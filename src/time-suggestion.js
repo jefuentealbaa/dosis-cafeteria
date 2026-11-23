@@ -7,8 +7,8 @@ const LUNCH_START = 13 * 60;
 const LUNCH_END = 16 * 60;
 
 const SUGGESTIONS = {
-  morning: { text: "Esta mañana: un café con algo dulce", href: "#carta" },
-  lunch: { text: "Es hora de almorzar: mira los almuerzos", href: "#almuerzos" },
+  morning: { text: "Esta mañana: café y algo dulce", href: "#carta" },
+  lunch: { text: "Hora de almorzar: ver almuerzos", href: "#almuerzos" },
   afternoon: { text: "Pausa de la tarde: café y algo dulce", href: "#carta" }
 };
 

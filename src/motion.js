@@ -101,12 +101,11 @@ motion.add("(prefers-reduced-motion: no-preference)", context => {
     const lines = select(".hero-title-line > span");
     const locationLabel = hero.querySelector(".hero-location");
     const actions = hero.querySelector(".hero-actions");
-    const note = hero.querySelector(".hero-note");
     const glow = hero.querySelector(".hero-glow");
     const muralStrokes = select(".hero-mural-mark path");
 
     gsap.set(lines, { y: 0, yPercent: 108, x: index => index === 0 ? -16 : 16, force3D: true });
-    gsap.set([locationLabel, actions, note], { y: 12, opacity: 0 });
+    gsap.set([locationLabel, actions], { y: 12, opacity: 0 });
     gsap.set(glow, { opacity: 0 });
     gsap.set(muralStrokes, { strokeDashoffset: 1 });
     gsap.set(art, { y: Math.min(126, stage.clientHeight * 0.44), opacity: 0, force3D: true });
@@ -116,7 +115,6 @@ motion.add("(prefers-reduced-motion: no-preference)", context => {
       .to(lines, { yPercent: 0, x: 0, duration: 0.72, stagger: 0.1 }, 0)
       .to(glow, { opacity: 1, duration: 0.76 }, 0.08)
       .to(actions, { y: 0, opacity: 1, duration: 0.42 }, 0.27)
-      .to(note, { y: 0, opacity: 1, duration: 0.46 }, 0.43)
       .to(muralStrokes, { strokeDashoffset: 0, duration: 0.68, stagger: 0.085 }, 0.42);
 
     const enterPhoto = gsap.to(art, { y: 0, opacity: 1, duration: 0.84, ease: "power3.out", paused: true });

@@ -99,12 +99,3 @@ menuFilters.addEventListener("click", event => {
   if (selected) selectMenuFilter(selected);
 });
 
-const heroMenuLink = document.querySelector("[data-menu-jump]");
-const heroMenuFilter = menuButtons.find(button => button.dataset.menuFilter === heroMenuLink.dataset.menuJump);
-
-heroMenuLink.addEventListener("click", event => {
-  if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-  selectMenuFilter(heroMenuFilter);
-});
-
-if (location.hash === heroMenuLink.hash) selectMenuFilter(heroMenuFilter, { animate: false });
