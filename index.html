@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06371b">
+  <meta name="description" content="Conoce Dosis Cafetería en Concepción. Café, dulces y un espacio para sentarse a disfrutar.">
+  <title>Dosis Cafetería · Concepción</title>
+  <script>
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches &&
+        ["", "#inicio", "#contenido"].includes(location.hash)) {
+      document.documentElement.classList.add("hero-intro");
+      setTimeout(() => document.documentElement.classList.remove("hero-intro"), 450);
+    }
+  </script>
+  <link rel="stylesheet" href="/src/style.css">
+  <noscript><style>.site-header { background-color: var(--mural-deep); }</style></noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body id="inicio">
+  <a class="skip" href="#contenido">Ir al contenido</a>
+  <header class="site-header">
+    <nav class="nav frame" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Dosis Cafetería, inicio"><img src="/assets/dosis-logo.webp" width="600" height="149" alt="Dosis" fetchpriority="high"></a>
+      <ul class="nav-links">
+        <li><a href="#carta">Carta</a></li>
+        <li class="nav-lunch"><a href="#almuerzos">Almuerzos</a></li>
+        <li><a href="#espacio">El local</a></li>
+        <li class="nav-reviews"><a href="#resenas">Reseñas</a></li>
+      </ul>
+      <a class="nav-visit" href="#visita">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <g id="dosis-location-pin">
+            <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/>
+            <circle cx="12" cy="10" r="2.5"/>
+          </g>
+        </svg>
+        Visítanos
+      </a>
+    </nav>
+  </header>
+  <main id="contenido" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <span class="hero-glow" aria-hidden="true"></span>
+      <div class="hero-copy frame">
+        <p class="hero-location">Cafetería en Concepción</p>
+        <h1 id="hero-title">
+          <span class="hero-title-line"><span>Una buena</span></span>
+          <span class="hero-title-line"><span>dosis de <em>café.</em></span></span>
+        </h1>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#carta">Explorar la carta</a>
+          <a class="button button-ghost" href="#espacio">Conocer el local</a>
+        </div>
+      </div>
+      <figure class="hero-stage">
+        <svg class="hero-mural-mark hero-mural-spark" viewBox="0 0 64 84" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round">
+          <path pathLength="1" d="M31 4C33 29 38 38 60 42 38 46 34 55 33 80 29 56 25 47 4 44 24 39 28 28 31 4Z"/>
+        </svg>
+        <svg class="hero-mural-mark hero-mural-bean" viewBox="-29 0 137 114" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+          <path pathLength="1" d="M91 13C108 26 103 58 86 81 69 104 38 114 19 101 1 89 6 60 23 36 40 11 73-1 91 13Z"/>
+          <path pathLength="1" d="M92 14C72 18 65 33 55 49 43 68 23 69 13 86"/>
+          <path pathLength="1" d="M86 79C68 97 46 103 25 96"/>
+          <path pathLength="1" d="M-15 54C-27 45-26 28-20 19"/>
+          <path pathLength="1" d="M-4 47C-10 41-11 32-7 26"/>
+        </svg>
+        <div class="hero-art">
+          <img src="/assets/latte-hero.webp"
+               srcset="/assets/latte-hero-small.webp 960w, /assets/latte-hero.webp 1500w"
+               sizes="(max-width: 650px) 116vw, (max-width: 850px) 94vw, (max-width: 1440px) 81vw, 1168px"
+               alt="Latte frío con espresso, leche y cubos de hielo en un vaso de cristal"
+               width="1500" height="750" fetchpriority="high" decoding="async">
+        </div>
+        <figcaption class="hero-note">
+          <a href="#menu-frias" data-menu-jump="frias" aria-label="Dosis Fría Latte, ver bebidas frías en la carta">Dosis Fría Latte</a>
+          <span>Imagen referencial</span>
+        </figcaption>
+      </figure>
+    </section>
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Barra de café <b>✦</b> Dulces y tortas <b>✦</b> En Conce <b>✦</b> Barra de café <b>✦</b> Dulces y tortas <b>✦</b> En Conce <b>✦</b></span>
+        <span>Barra de café <b>✦</b> Dulces y tortas <b>✦</b> En Conce <b>✦</b> Barra de café <b>✦</b> Dulces y tortas <b>✦</b> En Conce <b>✦</b></span>
+      </div>
+    </div>
+    <section class="section frame" id="carta" aria-labelledby="menu-title">
+      <header class="section-heading menu-heading mural-heading reveal">
+        <h2 id="menu-title">La carta</h2>
+        <svg class="mural-icon mural-croissant" viewBox="0 0 124 88" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 55C9 51 10 43 15 36 25 21 40 11 56 9 76 4 103 19 110 38 115 51 112 61 105 68 102 76 96 81 86 83 94 76 94 68 88 62 82 62 77 58 74 54 64 54 58 50 54 43 47 44 41 44 35 41 29 45 23 46 21 50 17 53 15 56 12 55Z"/>
+          <path d="M24 28C28 29 34 35 35 41M47 12C54 19 57 31 54 43M69 9C77 23 81 41 74 54M89 17C98 29 96 50 88 62M107 39C107 53 101 61 93 66"/>
+        </svg>
+      </header>
+      <div class="menu reveal" data-menu>
+        <div class="menu-filters" role="group" aria-label="Filtrar carta" hidden>
+          <button type="button" data-menu-filter="toda" aria-pressed="true" aria-controls="menu-categorias">Toda la carta</button>
+          <button type="button" data-menu-filter="calientes" aria-pressed="false" aria-controls="menu-categorias">Calientes</button>
+          <button type="button" data-menu-filter="frias" aria-pressed="false" aria-controls="menu-categorias">Frías</button>
+          <button type="button" data-menu-filter="dulces" aria-pressed="false" aria-controls="menu-categorias">Dulces</button>
+        </div>
+        <p class="menu-status" role="status"></p>
+        <div id="menu-categorias">
+          <section class="menu-category" data-menu-category="calientes" aria-labelledby="menu-calientes">
+            <header class="menu-chapter">
+              <div class="menu-chapter-heading">
+                <h3 id="menu-calientes"><span>Calientes</span></h3>
+                <svg class="mural-icon mural-moka" viewBox="0 0 108 126" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 28 34 17 64 14 80 25 77 43 65 62 38 65 27 49Z M20 29 10 26 16 36 26 40 M24 28 50 32 78 26M50 32 48 62m12-25-3 14M44 16q2-10 10-9 6 0 8 8"/>
+                  <path d="M38 65 33 74 19 108 37 118 67 118 82 108 70 75 65 62M33 74q17 5 37 1m-26 4-7 39m20-39 10 39m12-88c19-8 25-1 24 10-1 9-10 15-22 16l-2-9c12-3 15-8 13-10-2-2-7 0-13 2"/>
+                </svg>
+              </div>
+              <figure class="menu-feature">
+                <div class="menu-card">
+                  <div class="menu-card-surface">
+                    <img class="menu-card-photo" src="/assets/menu-capuccino.webp" alt="Capuccino con arte latte en una taza de cerámica sobre el mesón de madera" width="1120" height="560" loading="lazy" decoding="async">
+                  </div>
+                  <div class="menu-products" aria-hidden="true">
+                    <img class="menu-product menu-product-near" src="/assets/menu-float-espresso.webp" alt="" width="360" height="360" loading="lazy" decoding="async">
+                    <img class="menu-product menu-product-far" src="/assets/menu-float-mocca.webp" alt="" width="360" height="360" loading="lazy" decoding="async">
+                  </div>
+                </div>
+                <figcaption><strong>Dosis Capuccino</strong><span>Imagen referencial</span></figcaption>
+              </figure>
+            </header>
+            <div class="menu-columns">
+              <div class="menu-column">
+                <div class="menu-group">
+                  <div class="menu-group-heading">
+                    <h4>Barra de espresso</h4>
+                    <span aria-label="Tamaño XS">XS</span>
+                  </div>
+                  <dl>
+                    <div><dt>Dosis Ristreto</dt><dd>$2.600</dd></div>
+                    <div><dt>Dosis Espresso (simple)</dt><dd>$2.700</dd></div>
+                    <div><dt>Dosis Espresso (doble)</dt><dd>$2.900</dd></div>
+                    <div><dt>Dosis Lungo</dt><dd>$3.000</dd></div>
+                  </dl>
+                </div>
+                <div class="menu-group">
+                  <div class="menu-group-heading">
+                    <h4>Clásicos de café</h4>
+                    <span aria-label="Tamaño S">S</span>
+                  </div>
+                  <dl>
+                    <div><dt>Dosis Americano</dt><dd>$3.300</dd></div>
+                    <div><dt>Dosis Flat white</dt><dd>$4.000</dd></div>
+                    <div><dt>Dosis Cortado</dt><dd>$3.500</dd></div>
+                    <div><dt>Dosis Capuccino</dt><dd>$3.500</dd></div>
+                    <div><dt>Dosis Brasileño</dt><dd>$3.500</dd></div>
+                  </dl>
+                </div>
+              </div>
+              <div class="menu-column">
+                <div class="menu-group">
+                  <div class="menu-group-heading">
+                    <h4>Lattes y otras tazas</h4>
+                    <span aria-label="Tamaño M">M</span>
+                  </div>
+                  <dl>
+                    <div><dt>Dosis Latte</dt><dd>$3.800</dd></div>
+                    <div><dt>Chocolate caliente</dt><dd>$3.900</dd></div>
+                    <div><dt>Choco-Avellana</dt><dd>$3.900</dd></div>
+                    <div><dt>Dosis Vainilla</dt><dd>$4.100</dd></div>
+                    <div><dt>Dosis Sombra</dt><dd>$4.100</dd></div>
+                    <div><dt>Dosis Mocca</dt><dd>$4.100</dd></div>
+                    <div><dt>Dosis Dirty Chai</dt><dd>$4.100</dd></div>
+                    <div><dt>Dosis Chai Latte</dt><dd>$4.100</dd></div>
+                    <div><dt>Té o infusión</dt><dd>$1.500</dd></div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="menu-category" data-menu-category="frias" aria-labelledby="menu-frias">
+            <header class="menu-chapter">
+              <div class="menu-chapter-heading">
+                <h3 id="menu-frias" tabindex="-1"><span>Frías</span></h3>
+                <svg class="mural-icon mural-kettle" viewBox="0 0 142 114" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M47 34c13-13 48-11 60 3l-6 57c-3 17-48 20-63 3-7-8-8-15-5-23l9-36Z M46 33q28 12 61 4m-27-12 1-10m4-5c-1 6-12 6-13 0s11-8 13 0Z"/>
+                  <path d="M36 69C20 67 9 54 9 38 9 28 8 21 4 15c10 0 17 9 18 19 1 10 6 14 21 17m62 3c15-11 31-6 31 9 1 19-12 32-34 34m3-29c12-11 20-9 18 2-1 9-9 15-19 17M93 69l-5 24m-6-17-2 13"/>
+                </svg>
+              </div>
+              <figure class="menu-feature">
+                <div class="menu-card">
+                  <div class="menu-card-surface">
+                    <img class="menu-card-photo" src="/assets/menu-espresso-naranja.webp" alt="Vaso con capas de espresso y jugo de naranja sobre hielo frente a la cafetera" width="1120" height="560" loading="lazy" decoding="async">
+                  </div>
+                  <div class="menu-products" aria-hidden="true">
+                    <img class="menu-product menu-product-near" src="/assets/menu-float-latte.webp" alt="" width="360" height="360" loading="lazy" decoding="async">
+                    <img class="menu-product menu-product-far" src="/assets/menu-float-afogatto.webp" alt="" width="360" height="360" loading="lazy" decoding="async">
+                  </div>
+                </div>
+                <figcaption><strong>Dosis Fría Espresso-Naranja</strong><span>Imagen referencial</span></figcaption>
+              </figure>
+            </header>
+            <div class="menu-columns">
+              <div class="menu-column">
+                <div class="menu-group">
+                  <div class="menu-group-heading">
+                    <h4>Café y té fríos</h4>
+                    <span aria-label="Tamaño L">L</span>
+                  </div>
+                  <dl>
+                    <div><dt>Dosis Fría Té o infusión</dt><dd>$3.400</dd></div>
+                    <div><dt>Dosis Afogatto</dt><dd>$3.500</dd></div>
+                    <div><dt>Dosis Fría Espresso-Naranja</dt><dd>$4.500</dd></div>
+                    <div><dt>Dosis Fría American-Sprite</dt><dd>$4.500</dd></div>
+                    <div><dt>Dosis Fría Latte</dt><dd>$4.500</dd></div>
+                    <div><dt>Dosis Fría Coco Berrie</dt><dd>$4.700</dd></div>
+                    <div><dt>Dosis Fría Dirty Chai</dt><dd>$4.700</dd></div>
+                    <div><dt>Dosis Fría Dulce de Leche</dt><dd>$4.900</dd></div>
+                    <div><dt>Dosis Fría Tres Leches</dt><dd>$4.900</dd></div>
+                    <div><dt>Dosis Fría Mocca</dt><dd>$4.900</dd></div>
+                    <div><dt>Dosis Fría Caramelo</dt><dd>$4.900</dd></div>
+                    <div><dt>Dosis Café Helado</dt><dd>$5.100</dd></div>
+                  </dl>
+                </div>
+              </div>
+              <div class="menu-column">
+                <div class="menu-group">
+                  <div class="menu-group-heading">
+                    <h4>Jugos, batidos y limonadas</h4>
+                    <span aria-label="Tamaño L">L</span>
+                  </div>
+                  <dl>
+                    <div><dt>Dosis Jugo Natural</dt><dd>$3.800</dd></div>
+                    <div><dt>Dosis Batido Natural</dt><dd>$4.100</dd></div>
+                    <div><dt>Dosis Leche con Plátano</dt><dd>$4.100</dd></div>
+                    <div><dt>Limonada tradicional</dt><dd>$3.800</dd></div>
+                    <div><dt>Limonada Suiza</dt><dd>$4.300</dd></div>
+                  </dl>
+                </div>
+                <div class="menu-group">
+                  <div class="menu-group-heading">
+                    <h4>Bebidas envasadas</h4>
+                    <span>Precio</span>
+                  </div>
+                  <dl>
+                    <div><dt>Bebida Lata</dt><dd>$1.500</dd></div>
+                    <div><dt>Energética</dt><dd>$2.500</dd></div>
+                    <div><dt>Agua Mineral</dt><dd>$1.000</dd></div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="menu-category" data-menu-category="dulces" aria-labelledby="menu-dulces">
+            <header class="menu-chapter">
+              <h3 id="menu-dulces"><span>Dulces</span></h3>
+              <figure class="menu-feature">
+                <div class="menu-card">
+                  <div class="menu-card-surface">
+                    <img class="menu-card-photo" src="/assets/menu-roll-canela.webp" alt="Roll de canela abierto sobre un plato de cerámica junto a la vitrina" width="1120" height="560" loading="lazy" decoding="async">
+                  </div>
+                  <div class="menu-products" aria-hidden="true">
+                    <img class="menu-product menu-product-near" src="/assets/menu-float-cookie.webp" alt="" width="360" height="360" loading="lazy" decoding="async">
+                    <img class="menu-product menu-product-far" src="/assets/menu-float-alfajor.webp" alt="" width="360" height="360" loading="lazy" decoding="async">
+                  </div>
+                </div>
+                <figcaption><strong>Roll de Canela</strong><span>Imagen referencial</span></figcaption>
+              </figure>
+            </header>
+            <div class="menu-columns">
+              <div class="menu-column">
+                <div class="menu-group">
+                  <div class="menu-group-heading">
+                    <h4>De la vitrina</h4>
+                    <span>Precio</span>
+                  </div>
+                  <dl>
+                    <div><dt>Torta Trozo</dt><dd>$4.200</dd></div>
+                    <div><dt>Kuchen Trozo</dt><dd>$3.500</dd></div>
+                    <div><dt>Pie Trozo</dt><dd>$3.500</dd></div>
+                    <div><dt>Roll de Canela</dt><dd>$3.500</dd></div>
+                    <div><dt>New York Cookie</dt><dd>$3.900</dd></div>
+                  </dl>
+                </div>
+              </div>
+              <div class="menu-column">
+                <div class="menu-group">
+                  <div class="menu-group-heading">
+                    <h4>Alfajores y galletas</h4>
+                    <span>Precio</span>
+                  </div>
+                  <dl>
+                    <div><dt>Alfajores Sin Azúcar</dt><dd>$2.990</dd></div>
+                    <div><dt>Alfajor Sableé</dt><dd>$1.500</dd></div>
+                    <div><dt>Galletas mantequilla para café (100 g)</dt><dd>$2.500</dd></div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section class="section lunch" id="almuerzos" aria-labelledby="lunch-title">
+      <div class="frame">
+        <header class="lunch-heading section-heading reveal">
+          <div>
+            <h2 id="lunch-title">Almuerzos.</h2>
+            <p>Rápidos, ricos y frescos.</p>
+          </div>
+          <a class="button button-dark" id="almuerzos-reservar" href="https://wa.me/56987688839" data-lunch-reservation target="_blank" rel="noopener noreferrer">Reservar por WhatsApp</a>
+        </header>
+        <div class="lunch-grid">
+          <section class="lunch-family" aria-labelledby="lunch-gohan">
+            <div class="lunch-family-heading">
+              <h3 id="lunch-gohan">Gohan</h3>
+              <p>Incluye un sachet de salsa de soya o teriyaki.</p>
+            </div>
+            <div class="lunch-cards">
+              <article class="lunch-card">
+                <div class="lunch-card-photo"><img src="/assets/almuerzo-gohan-teriyaki.webp" alt="Gohan de pollo teriyaki con arroz, palta y sésamo" width="623" height="623" loading="lazy" decoding="async"></div>
+                <div class="lunch-card-copy">
+                  <h4>Teriyaki</h4>
+                  <p>Arroz de sushi, pollo en salsa teriyaki, palta, queso crema, cebollín y sésamo.</p>
+                  <div class="lunch-card-footer">
+                    <strong>$4.990</strong>
+                    <a href="#almuerzos-reservar" data-lunch-reservation="Gohan Teriyaki" aria-label="Reservar Gohan Teriyaki">Reservar</a>
+                  </div>
+                </div>
+              </article>
+              <article class="lunch-card">
+                <div class="lunch-card-photo"><img src="/assets/almuerzo-gohan-camaron.webp" alt="Gohan de camarones salteados con arroz, palta y queso crema" width="623" height="623" loading="lazy" decoding="async"></div>
+                <div class="lunch-card-copy">
+                  <h4>Camarón</h4>
+                  <p>Arroz de sushi, camarón ecuatoriano salteado, palta, queso crema, cebollín y sésamo.</p>
+                  <div class="lunch-card-footer">
+                    <strong>$5.990</strong>
+                    <a href="#almuerzos-reservar" data-lunch-reservation="Gohan Camarón" aria-label="Reservar Gohan Camarón">Reservar</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="lunch-family" aria-labelledby="lunch-pastas">
+            <div class="lunch-family-heading">
+              <h3 id="lunch-pastas">Pastas</h3>
+              <p>Incluye salsa de ajo y salsa de albahaca.</p>
+            </div>
+            <div class="lunch-cards">
+              <article class="lunch-card">
+                <div class="lunch-card-photo"><img src="/assets/almuerzo-pasta-camaron.webp" alt="Pasta con camarones, palta, choclo y verduras" width="623" height="623" loading="lazy" decoding="async"></div>
+                <div class="lunch-card-copy">
+                  <h4>Camarón</h4>
+                  <p>Pasta, camarón ecuatoriano salteado, palta, lechuga, choclo, palmito y tomate cherry.</p>
+                  <div class="lunch-card-footer">
+                    <strong>$5.990</strong>
+                    <a href="#almuerzos-reservar" data-lunch-reservation="Pasta Camarón" aria-label="Reservar Pasta Camarón">Reservar</a>
+                  </div>
+                </div>
+              </article>
+              <article class="lunch-card">
+                <div class="lunch-card-photo"><img src="/assets/almuerzo-pasta-pollo.webp" alt="Pasta con pollo a la plancha, palta y verduras" width="623" height="623" loading="lazy" decoding="async"></div>
+                <div class="lunch-card-copy">
+                  <h4>Pollo</h4>
+                  <p>Pasta, pollo a la plancha, palta, lechuga, choclo, palmito y tomate cherry.</p>
+                  <div class="lunch-card-footer">
+                    <strong>$4.990</strong>
+                    <a href="#almuerzos-reservar" data-lunch-reservation="Pasta Pollo" aria-label="Reservar Pasta Pollo">Reservar</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+          <div class="lunch-cards lunch-plates">
+            <article class="lunch-card">
+              <div class="lunch-card-photo"><img src="/assets/almuerzo-wrap.webp" alt="Wrap de tortilla de trigo con pollo y verduras" width="623" height="623" loading="lazy" decoding="async"></div>
+              <div class="lunch-card-copy">
+                <h3>Wrap</h3>
+                <p>Tortilla de trigo, pollo a la plancha, lechuga, zanahoria, pepino, choclo, tomate y salsa verde.</p>
+                <div class="lunch-card-footer">
+                  <strong>$3.990</strong>
+                  <a href="#almuerzos-reservar" data-lunch-reservation="Wrap" aria-label="Reservar Wrap">Reservar</a>
+                </div>
+              </div>
+            </article>
+            <article class="lunch-card">
+              <div class="lunch-card-photo"><img src="/assets/almuerzo-palta-reina.webp" alt="Palta reina rellena de pollo con verduras y huevo" width="623" height="623" loading="lazy" decoding="async"></div>
+              <div class="lunch-card-copy">
+                <h3>Palta reina</h3>
+                <p>Palta, pasta de pollo con mayonesa, morrón, ciboulette y mostaza, lechuga, choclo, palmito, tomate cherry y huevo.</p>
+                <div class="lunch-card-footer">
+                  <strong>$4.990</strong>
+                  <a href="#almuerzos-reservar" data-lunch-reservation="Palta Reina" aria-label="Reservar Palta Reina">Reservar</a>
+                </div>
+              </div>
+            </article>
+            <article class="lunch-card">
+              <div class="lunch-card-photo"><img src="/assets/almuerzo-bowl-pollo.webp" alt="Bowl de arroz y pollo con repollo morado, zanahoria y choclo" width="623" height="623" loading="lazy" decoding="async"></div>
+              <div class="lunch-card-copy">
+                <h3>Bowl pollo</h3>
+                <p>Arroz, pollo a la plancha, repollo morado, zanahoria, tomate, lechuga y choclo.</p>
+                <div class="lunch-card-footer">
+                  <strong>$4.990</strong>
+                  <a href="#almuerzos-reservar" data-lunch-reservation="Bowl Pollo" aria-label="Reservar Bowl Pollo">Reservar</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="lunch-image-note">Imágenes referenciales de los platos.</p>
+      </div>
+    </section>
+    <section class="mural" id="mural" aria-labelledby="mural-title">
+      <div class="mural-grid frame">
+        <div class="mural-copy">
+          <div class="mural-kicker">
+            <p class="kicker">Hecho en Conce</p>
+            <svg class="mural-icon mural-cloud" viewBox="0 0 166 74" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 55c5-12 19-18 32-14C39 21 57 7 76 9c18 2 31 15 33 32 14-8 31-2 36 12 6-3 12-2 17 2M18 63c14-4 28-5 42-3m51 3c14-3 28-3 38 0"/>
+              <path d="M50 43c9-7 19-6 27 1"/>
+            </svg>
+            <svg class="mural-icon mural-clock" viewBox="0 0 74 105" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+              <defs>
+                <g id="mural-campanil">
+                  <path d="M13 98 16 20 35 7 57 15 61 97 13 98Z M9 38 65 35M11 92l51-2M16 38l45-3m-52 4 7 5 45-2 4-7M22 20l14-9 15 6 2 16-31 2Z"/>
+                  <path d="M44 23c1 5-3 9-7 9s-8-3-8-7c0-5 3-8 8-8 4 0 7 2 7 6Zm-21 60 2-26q5-9 9 0v26m7-1V54q5-8 9 0l2 28M20 84l35-1"/>
+                </g>
+                <path id="mural-clock-hand" d="M37 20v5l4 1"/>
+              </defs>
+              <use href="#mural-campanil"/>
+              <use class="mural-clock-hand" href="#mural-clock-hand"/>
+            </svg>
+          </div>
+          <h2 id="mural-title">Una pausa<br><em>con nombre.</em></h2>
+          <div class="mural-description">
+            <p>Un café, algo rico y tiempo para sentarse. Eso es Dosis.</p>
+            <div class="mural-characters">
+              <svg class="mural-icon mural-happy-cloud" viewBox="0 0 156 114" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M31 38C19 38 14 28 18 20c5-10 19-9 24 1 7-16 25-17 35-6 9-14 29-16 39-2 10-5 23 2 24 14 8 2 14 9 11 18-1 7-7 11-13 11 11 5 14 19 7 26-5 5-13 7-22 4-2 12-15 20-26 13-6 11-20 12-29 4-9 5-21 0-24-10-14 5-27-3-27-17C3 72 1 59 9 50c6-9 15-11 22-12Z"/>
+                <path d="M48 42c5-6 11-7 17-4m31-2c6-5 13-5 19 1"/>
+                <path class="mural-smile-eyes" d="M45 62c2-13 14-16 19-3m-21 4c7-2 15-2 23-1m27-3c2-13 15-16 20-2m-22 3c8-3 17-3 24-1"/>
+                <path d="M57 73c14 8 28 10 44-1 8-6 14-1 10 6-7 16-30 23-46 14-10-5-16-17-8-19Zm18 21c5-6 13-9 22-6"/>
+              </svg>
+              <svg class="mural-icon mural-eyed-cup" viewBox="0 0 138 118" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <defs>
+                  <g id="mural-eyed-cup-drawing">
+                    <path d="M19 36C24 19 81 8 102 19 116 28 94 45 64 50 37 55 15 50 19 36Z M31 34c15-10 37-13 59-12"/>
+                    <path d="M19 37c3 24 13 45 27 56 14 10 31 8 44-5 14-15 20-39 17-62M108 36c18-13 31-1 24 13-6 11-15 14-28 16m6-20c9-6 17-5 13 4-3 6-9 8-16 8"/>
+                    <path d="M49 81c11 2 24-1 34-7 0 7-8 14-15 16-7 2-15-2-19-9Z M40 88C24 90 6 99 9 105c4 10 36 10 65 5 28-5 47-13 44-20-2-5-11-6-22-4"/>
+                  </g>
+                  <path id="mural-cup-eye-left" d="M39 64c3-5 10-4 11 1 1 6-3 9-7 8-4 0-6-5-4-9Z"/>
+                  <path id="mural-cup-eye-middle" d="M57 61c3-5 10-4 11 1s-2 9-6 9c-5 0-7-6-5-10Z"/>
+                  <path id="mural-cup-eye-right" d="M76 56c4-5 10-3 11 2 0 6-3 9-7 8-4 0-6-5-4-10Z"/>
+                </defs>
+                <use href="#mural-eyed-cup-drawing"/>
+                <use class="mural-cup-eye" href="#mural-cup-eye-left"/>
+                <use class="mural-cup-eye" href="#mural-cup-eye-middle"/>
+                <use class="mural-cup-eye" href="#mural-cup-eye-right"/>
+              </svg>
+            </div>
+          </div>
+          <div class="mural-actions">
+            <div class="mural-links">
+              <a class="button button-primary" href="#espacio">Recorrer el espacio</a>
+              <button class="mural-motion-toggle" type="button" hidden>Pausar animaciones</button>
+            </div>
+            <div class="mural-rock-lockup">
+              <svg class="mural-icon mural-rock-ribbon" viewBox="0 0 300 92" role="img" aria-label="La cuna del rock" focusable="false">
+                <path class="mural-rock-outline" d="M11 40C64 9 122 17 173 26 219 35 257 29 288 13l-8 45c-28 16-64 24-112 15-53-9-99-13-145 9Z" fill="none" stroke="currentColor" stroke-width="3.7" stroke-linejoin="round"/>
+                <path id="mural-rock-lettering" d="M29 61C75 37 121 42 173 51 213 58 248 53 271 41" fill="none"/>
+                <text fill="currentColor" text-anchor="middle"><textPath href="#mural-rock-lettering" startOffset="50%">LA CUNA DEL ROCK</textPath></text>
+              </svg>
+              <svg class="mural-icon mural-guitar" viewBox="0 0 98 86" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round">
+                <g transform="translate(98) scale(-1 1)">
+                  <path d="M35 37C29 35 24 40 23 46 22 52 18 54 13 53 6 53 4 63 9 72 15 83 32 84 41 77 48 71 49 66 47 60 46 55 54 53 54 47 54 42 50 40 45 42M29 60 73 15 79 21 35 67Z M73 15 74 7 85 4 93 12 89 23 79 21M81 9l2-2m4 7 2-2M18 70l8 7m7-28 3 3m-9 3 3 3"/>
+                  <path class="mural-guitar-strings" d="m23 71 52-53m-49 55 51-52" stroke-width="1.4"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <figure class="mural-photo">
+          <img src="/assets/dosis-mural.webp" alt="Mural verde ilustrado de Dosis Café Concepción junto a una mesa de madera" width="1052" height="1400" loading="lazy">
+        </figure>
+      </div>
+    </section>
+    <section class="section frame" id="espacio" aria-labelledby="gallery-title">
+      <header class="section-heading mural-heading reveal">
+        <h2 id="gallery-title">Entra a Dosis.</h2>
+        <svg class="mural-icon mural-amp" viewBox="0 0 92 83" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 12 75 7 85 16 81 70 15 76 7 68Z M75 7 74 63 7 68M74 63 81 70M10 26 74 21M18 34 65 30 64 56 17 60Z"/>
+          <path d="M20 19h1m9-1h1m9-1h1m10-1h1M18 47l13-14M20 59l27-28M35 58l26-27M49 57l15-16M18 40l18 18M24 34l22 23M36 33l23 23M48 32l16 16M60 31l5 5"/>
+        </svg>
+      </header>
+      <div class="gallery">
+        <figure class="gallery-photo gallery-mirror">
+          <img src="/assets/dosis-espejo.webp" alt="Espejo circular iluminado donde se refleja el mural de la cafetería" width="1600" height="1200" loading="lazy" decoding="async">
+        </figure>
+        <figure class="gallery-photo gallery-bar">
+          <img src="/assets/dosis-barra.webp" alt="Cafeteras, tazas y vasos sobre la barra de Dosis" width="1600" height="1200" loading="lazy" decoding="async">
+        </figure>
+        <figure class="gallery-photo gallery-display">
+          <img src="/assets/dosis-vitrina.webp" alt="Vitrina iluminada con tortas y otras preparaciones" width="1600" height="1200" loading="lazy" decoding="async">
+        </figure>
+        <figure class="gallery-photo gallery-coffee">
+          <img src="/assets/dosis-cafe.webp" alt="Bolsas de café junto a una taza sobre una mesa de madera" width="1050" height="1400" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </section>
+    <section class="section frame social" id="redes" aria-labelledby="social-title">
+      <header class="section-heading social-heading reveal">
+        <h2 id="social-title">Dosis en redes.</h2>
+        <div class="social-heading-meta">
+          <div class="social-links" data-social-links hidden></div>
+          <svg class="mural-icon mural-cassette" viewBox="0 0 112 72" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 12Q7 6 14 6L98 8Q104 8 104 14L103 61Q103 66 97 66L13 64Q8 64 8 58Z M18 17 94 19 93 44 18 42Z M28 63l10-14 36 1 12 15"/>
+            <path d="M48 23 63 23 63 39 48 38Z M43 57h4m17 1h5"/>
+            <path class="mural-cassette-reel" d="M40 30a6 6 0 1 1-12 0 6 6 0 1 1 12 0Zm-6-6v3m5 6-3-1m-7 1 3-1" stroke-width="2.6"/>
+            <path class="mural-cassette-reel" d="M85 31a6 6 0 1 1-12 0 6 6 0 1 1 12 0Zm-6-6v3m5 6-3-1m-7 1 3-1" stroke-width="2.6"/>
+          </svg>
+        </div>
+      </header>
+      <div class="social-preview" data-social-preview>
+        <div class="social-preview-copy">
+          <h3>Instagram</h3>
+          <p>Pronto podrás ver los reels de Dosis aquí.</p>
+        </div>
+        <img src="/assets/dosis-barra.webp" alt="La barra de Dosis Cafetería" width="1600" height="1200" loading="lazy" decoding="async">
+      </div>
+      <div class="social-reels" data-social-reels hidden></div>
+    </section>
+    <section class="section reviews" id="resenas" aria-labelledby="reviews-title">
+      <div class="frame">
+        <header class="reviews-header reveal">
+          <h2 id="reviews-title">Lo que dicen<br>de Dosis.</h2>
+          <div class="reviews-header-meta">
+            <svg class="mural-icon mural-smiles" viewBox="0 0 126 82" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 54C1 39 8 17 26 10 47 1 70 13 73 36 75 52 65 66 49 73 35 75 18 71 10 54Z M73 34C86 22 106 24 116 36 126 48 121 68 108 75 97 82 83 79 73 70"/>
+              <path d="m31 24-4 15m16-14-5 15M22 47c6 13 20 17 34 9m34-17-2 9m13-8-2 9m-17 7c6 10 17 12 27 4"/>
+            </svg>
+            <div class="reviews-rating">
+              <p class="reviews-score">5,0<span> / 5</span></p>
+              <p class="reviews-stars" aria-hidden="true">★★★★★</p>
+              <p>23 reseñas en Google</p>
+            </div>
+          </div>
+        </header>
+        <div class="reviews-grid reveal">
+          <figure class="review-card">
+            <div class="review-card-top">
+              <span class="reviews-stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+              <span class="review-quote-mark" aria-hidden="true">“</span>
+            </div>
+            <blockquote cite="https://share.google/RRE0AC2ZyEckADg3u">
+              <p>Muy buena atención muy rica toda la comida y fresca.</p>
+            </blockquote>
+            <figcaption><a href="https://share.google/RRE0AC2ZyEckADg3u" target="_blank" rel="noopener noreferrer" aria-label="Leer la reseña de Jenifer Martinez en Google">Jenifer Martinez <span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
+          <figure class="review-card">
+            <div class="review-card-top">
+              <span class="reviews-stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+              <span class="review-quote-mark" aria-hidden="true">“</span>
+            </div>
+            <blockquote cite="https://share.google/KBrSHCSr3G9QfBjnO">
+              <p>La estética del café es muy bonita…</p>
+            </blockquote>
+            <figcaption><a href="https://share.google/KBrSHCSr3G9QfBjnO" target="_blank" rel="noopener noreferrer" aria-label="Leer la reseña de Valentina Faundes Canales en Google">Valentina Faundes Canales <span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
+          <figure class="review-card">
+            <div class="review-card-top">
+              <span class="reviews-stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+              <span class="review-quote-mark" aria-hidden="true">“</span>
+            </div>
+            <blockquote cite="https://share.google/2twGDgnEcbjU9TBzW">
+              <p>…el café exquisito y los pasteles muy frescos…</p>
+            </blockquote>
+            <figcaption><a href="https://share.google/2twGDgnEcbjU9TBzW" target="_blank" rel="noopener noreferrer" aria-label="Leer la reseña de Cristian Arriagada en Google">Cristian Arriagada <span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
+        </div>
+        <a class="button reviews-all" href="https://www.google.com/search?q=DOSIS+-+CAFETERIA+DE+ESPECIALIDAD+Concepci%C3%B3n&amp;kgmid=%2Fg%2F11z9n1tk9_#lrd=0x9669b57fbad966e9:0xb9d7690192f60d05,1,,,," target="_blank" rel="noopener noreferrer">
+          <span class="reviews-google-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 48 48" focusable="false">
+              <path fill="#4285F4" d="M43.61 24.46c0-1.36-.12-2.66-.34-3.92H24v7.43h11a9.4 9.4 0 0 1-4.08 6.16v5.14h6.61c3.87-3.57 6.08-8.83 6.08-14.81Z"/>
+              <path fill="#34A853" d="M24 44c5.51 0 10.13-1.83 13.52-4.73l-6.61-5.14c-1.83 1.23-4.16 1.96-6.91 1.96-5.32 0-9.84-3.59-11.46-8.42H5.71V33A20 20 0 0 0 24 44Z"/>
+              <path fill="#FBBC05" d="M12.54 27.67a12 12 0 0 1 0-7.34V15H5.71a20 20 0 0 0 0 18l6.83-5.33Z"/>
+              <path fill="#EA4335" d="M24 11.91c3.01 0 5.7 1.04 7.83 3.08l5.87-5.87C34.12 5.78 29.5 4 24 4A20 20 0 0 0 5.71 15l6.83 5.33c1.62-4.83 6.14-8.42 11.46-8.42Z"/>
+            </svg>
+          </span>
+          Ver todas las reseñas en Google
+        </a>
+      </div>
+    </section>
+    <section class="visit" id="visita" aria-labelledby="visit-title">
+      <div class="visit-grid frame">
+        <div class="visit-copy">
+          <div class="visit-kicker">
+            <p class="kicker">Dosis Cafetería</p>
+            <div class="visit-landmarks">
+              <svg class="mural-icon mural-clock" viewBox="0 0 74 105" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+                <use href="#mural-campanil"/>
+                <use href="#mural-clock-hand"/>
+              </svg>
+              <svg class="mural-icon mural-building" viewBox="0 0 168 98" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M41 29 59 12C74 21 96 24 114 15l18 20C108 50 65 50 41 29Z M58 31c16 8 43 10 58 1M50 37 48 71C66 85 104 87 123 74l1-33M49 52c25 13 53 14 74 3M49 65c24 14 53 15 74 3M64 46l-2 33m17-30-1 35m17-34v35m15-37 1 34"/>
+                <path d="M45 41 13 47 5 59 7 79 30 92 48 81m-42-22 25 12 17-12M31 71l-1 21m-16-25 1 3m9 1v3m-10 2v3m10 0v3m101-37 25 4 12 12-3 18-19 12-16-11m38-19-22 11-15-11m15 11v19m10-23v3m5-6v3m-5 7v3m5-6v3"/>
+              </svg>
+            </div>
+          </div>
+          <h2 id="visit-title">Nos vemos<br>en Conce.</h2>
+          <div class="visit-details">
+            <div>
+              <p class="visit-address">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#dosis-location-pin"/></svg>
+                <span data-visit-address>Barros Arana 935, Galería Giacaman</span>
+              </p>
+              <a class="button button-dark" data-maps-link href="https://www.google.com/maps/search/?api=1&amp;query=Dosis+Cafeter%C3%ADa+Concepci%C3%B3n+Chile" target="_blank" rel="noopener noreferrer">Buscar en Maps</a>
+            </div>
+            <svg class="visit-mural-cup" viewBox="0 0 138 118" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <use href="#mural-eyed-cup-drawing"/>
+              <use href="#mural-cup-eye-left"/>
+              <use href="#mural-cup-eye-middle"/>
+              <use href="#mural-cup-eye-right"/>
+            </svg>
+          </div>
+        </div>
+        <div class="visit-map" hidden>
+          <iframe data-visit-map title="Ubicación de Dosis Cafetería en Google Maps" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer frame">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#inicio" aria-label="Dosis Cafetería, volver al inicio"><img src="/assets/dosis-logo.webp" width="600" height="149" alt="Dosis" loading="lazy"></a>
+          <p>Cafetería en Concepción</p>
+          <div class="footer-links" data-social-links hidden></div>
+        </div>
+        <nav class="footer-nav" aria-label="Navegación del pie de página">
+          <h2>Explora</h2>
+          <a href="#carta">La carta</a>
+          <a href="#almuerzos">Almuerzos</a>
+          <a href="#espacio">El espacio</a>
+          <a href="#redes">Redes sociales</a>
+          <a href="#resenas">Reseñas</a>
+        </nav>
+        <div class="footer-location">
+          <h2>Ubicación</h2>
+          <address data-visit-address>Concepción, Chile</address>
+          <a data-maps-link href="https://www.google.com/maps/search/?api=1&amp;query=Dosis+Cafeter%C3%ADa+Concepci%C3%B3n+Chile" target="_blank" rel="noopener noreferrer">Buscar en Maps</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <svg class="mural-icon mural-vinyl" viewBox="0 0 84 84" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M74 25C84 44 75 68 57 76 36 85 14 74 7 56-2 36 9 15 27 8c18-7 38 0 47 17Z M53 38c3 6 0 13-6 16-7 3-14-1-16-7-3-6 1-13 7-15 5-2 12 0 15 6Z"/>
+          <path d="M19 44c-2-10 5-20 14-23m-7 24c-1-6 3-13 9-16m28 12c1 11-6 20-16 23m9-22c1 7-4 12-10 14"/>
+        </svg>
+        <p class="footer-credit">Propuesta desarrollada por <a href="https://revolutionmarketing.cl/" target="_blank" rel="noopener noreferrer">Revolution Marketing</a></p>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+  <a class="button lunch-float" href="#almuerzos-reservar" data-lunch-reservation aria-label="Reservar almuerzo por WhatsApp">
+    <svg width="23" height="23" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 20.7 4.2 16.6a9 9 0 1 1 3.3 3.3L3 20.7Z"/>
+      <path d="M8.4 7.8c-.8.5-1 1.3-.7 2.1 1 2.6 3 4.7 5.6 5.7.9.3 1.7 0 2.2-.7l.4-.8c.1-.2 0-.4-.3-.6l-1.8-.8c-.3-.1-.5-.1-.7.2l-.6.7c-1.3-.6-2.3-1.6-2.9-2.9l.7-.6c.3-.2.3-.4.2-.7l-.8-1.8c-.1-.3-.4-.4-.6-.3l-.7.5Z"/>
+    </svg>
+    <span>Reservar almuerzo</span>
+  </a>
+</body>
+</html>
