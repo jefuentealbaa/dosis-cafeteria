@@ -139,6 +139,10 @@ img { display: block; max-width: 100%; }
 .hero-title-line { overflow: hidden; padding-block: .1em; margin-block: -.1em; }
 .hero em { color: var(--green-highlight); font-style: normal; }
 .hero-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: .66rem; margin-top: clamp(1.3rem, 2.65vw, 2.5rem); }
+.hero-suggest { flex-basis: 100%; display: flex; align-items: center; justify-content: center; gap: .45rem; margin-top: .35rem; color: var(--green-highlight); font-size: .95rem; font-weight: 700; text-decoration: underline transparent; text-underline-offset: .24em; transition: text-decoration-color var(--interaction-transition); }
+.hero-suggest[hidden] { display: none; }
+.hero-suggest:is(:hover, :focus-visible) { text-decoration-color: currentColor; }
+.hero-suggest b { font-weight: 800; }
 .hero-stage { position: relative; height: clamp(15rem, 23.5vw, 21.5rem); margin-top: clamp(1.4rem, 2.15vw, 2.15rem); overflow: hidden; isolation: isolate; }
 .hero-mural-mark {
   position: absolute;

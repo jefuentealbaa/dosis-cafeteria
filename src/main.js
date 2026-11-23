@@ -1,6 +1,7 @@
 import "./interactions.js";
 import "./site-details.js";
 import "./open-status.js";
+import "./time-suggestion.js";
 import "./motion.js";
 
 const header = document.querySelector(".site-header");

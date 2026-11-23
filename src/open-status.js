@@ -5,7 +5,7 @@ const TIME_ZONE = "America/Santiago";
 const DAY_NAMES = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
 
 // Índice = día de la semana (0 = domingo). Horas en formato 24 h, null = cerrado.
-const SCHEDULE = [
+export const SCHEDULE = [
   null,
   { open: 10, close: 19 },
   { open: 10, close: 19 },
@@ -24,7 +24,7 @@ const formatter = new Intl.DateTimeFormat("en-US", {
 });
 const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-function santiagoNow() {
+export function santiagoNow() {
   const parts = Object.fromEntries(formatter.formatToParts(new Date()).map(part => [part.type, part.value]));
   return {
     day: WEEKDAYS.indexOf(parts.weekday),
