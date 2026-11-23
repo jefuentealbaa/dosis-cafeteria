@@ -635,10 +635,11 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
               Horario de atención
             </h3>
+            <p class="open-status" data-open-status hidden></p>
             <dl class="hours-list">
-              <div><dt>Lunes a viernes</dt><dd>10:00 – 19:00</dd></div>
-              <div><dt>Sábado</dt><dd>10:00 – 15:00</dd></div>
-              <div class="is-closed"><dt>Domingo</dt><dd>Cerrado</dd></div>
+              <div data-days="1,2,3,4,5"><dt>Lunes a viernes</dt><dd>10:00 – 19:00</dd></div>
+              <div data-days="6"><dt>Sábado</dt><dd>10:00 – 15:00</dd></div>
+              <div class="is-closed" data-days="0"><dt>Domingo</dt><dd>Cerrado</dd></div>
             </dl>
           </div>
           <div class="visit-details">
@@ -686,10 +687,11 @@
         </div>
         <div class="footer-hours">
           <h2>Horario</h2>
+          <p class="open-status" data-open-status hidden></p>
           <dl class="hours-list">
-            <div><dt>Lunes a viernes</dt><dd>10:00 – 19:00</dd></div>
-            <div><dt>Sábado</dt><dd>10:00 – 15:00</dd></div>
-            <div class="is-closed"><dt>Domingo</dt><dd>Cerrado</dd></div>
+            <div data-days="1,2,3,4,5"><dt>Lunes a viernes</dt><dd>10:00 – 19:00</dd></div>
+            <div data-days="6"><dt>Sábado</dt><dd>10:00 – 15:00</dd></div>
+            <div class="is-closed" data-days="0"><dt>Domingo</dt><dd>Cerrado</dd></div>
           </dl>
         </div>
       </div>
