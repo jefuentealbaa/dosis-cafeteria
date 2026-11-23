@@ -1,5 +1,5 @@
 // Recomendación del hero según la hora de Chile:
-// mañana y tarde -> café y algo dulce; 13:00 a 16:00 -> almuerzo.
+// 10:00 a 12:59 -> desayuno; 13:00 a 16:00 -> almuerzo; 16:01 al cierre -> café de la tarde.
 // Solo se muestra mientras el local está abierto (usa el mismo horario que open-status.js).
 import { SCHEDULE, santiagoNow } from "./open-status.js";
 
@@ -7,16 +7,16 @@ const LUNCH_START = 13 * 60;
 const LUNCH_END = 16 * 60;
 
 const SUGGESTIONS = {
-  morning: { text: "Esta mañana: café y algo dulce", href: "#carta" },
-  lunch: { text: "Hora de almorzar: ver almuerzos", href: "#almuerzos" },
-  afternoon: { text: "Pausa de la tarde: café y algo dulce", href: "#carta" }
+  morning: { text: "¿Buscas qué desayunar? Revisa la carta", href: "#carta" },
+  lunch: { text: "¿Hora de almorzar? Prueba un gohan", href: "#almuerzos" },
+  afternoon: { text: "¿Un cafecito por la tarde?", href: "#carta" }
 };
 
 function currentSuggestion() {
   const { day, minutes } = santiagoNow();
   const hours = SCHEDULE[day];
   if (!hours || minutes < hours.open * 60 || minutes >= hours.close * 60) return null;
-  if (minutes >= LUNCH_START && minutes < LUNCH_END) return SUGGESTIONS.lunch;
+  if (minutes >= LUNCH_START && minutes <= LUNCH_END) return SUGGESTIONS.lunch;
   return minutes < LUNCH_START ? SUGGESTIONS.morning : SUGGESTIONS.afternoon;
 }
 
