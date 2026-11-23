@@ -24,7 +24,21 @@ const formatter = new Intl.DateTimeFormat("en-US", {
 });
 const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
+// Solo en desarrollo (npm run dev): permite simular la hora, por ejemplo
+// http://localhost:3000/?hora=11:00 (lunes) o ?hora=14:30&dia=6 (sábado; 0 = domingo).
+// En la web publicada este bloque no existe.
+function simulatedNow() {
+  if (!import.meta.env.DEV) return null;
+  const params = new URLSearchParams(location.search);
+  const match = params.get("hora")?.match(/^(\d{1,2}):(\d{2})$/);
+  if (!match) return null;
+  const day = Number(params.get("dia") ?? 1);
+  return { day: day >= 0 && day <= 6 ? day : 1, minutes: Number(match[1]) * 60 + Number(match[2]) };
+}
+
 export function santiagoNow() {
+  const simulated = simulatedNow();
+  if (simulated) return simulated;
   const parts = Object.fromEntries(formatter.formatToParts(new Date()).map(part => [part.type, part.value]));
   return {
     day: WEEKDAYS.indexOf(parts.weekday),
