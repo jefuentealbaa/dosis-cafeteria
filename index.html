@@ -6,6 +6,33 @@
   <meta name="theme-color" content="#06371b">
   <meta name="description" content="Conoce Dosis Cafetería en Concepción. Café, dulces y un espacio para sentarse a disfrutar.">
   <title>Dosis Cafetería · Concepción</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Dosis Cafetería",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Barros Arana 935, Galería Giacaman",
+      "addressLocality": "Concepción",
+      "addressCountry": "CL"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "10:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "15:00"
+      }
+    ]
+  }
+  </script>
   <script>
     if (!matchMedia("(prefers-reduced-motion: reduce)").matches &&
         ["", "#inicio", "#contenido"].includes(location.hash)) {
@@ -603,6 +630,17 @@
             </div>
           </div>
           <h2 id="visit-title">Nos vemos<br>en Conce.</h2>
+          <div class="visit-hours">
+            <h3 class="hours-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              Horario de atención
+            </h3>
+            <dl class="hours-list">
+              <div><dt>Lunes a viernes</dt><dd>10:00 – 19:00</dd></div>
+              <div><dt>Sábado</dt><dd>10:00 – 15:00</dd></div>
+              <div class="is-closed"><dt>Domingo</dt><dd>Cerrado</dd></div>
+            </dl>
+          </div>
           <div class="visit-details">
             <div>
               <p class="visit-address">
@@ -645,6 +683,14 @@
           <h2>Ubicación</h2>
           <address data-visit-address>Concepción, Chile</address>
           <a data-maps-link href="https://www.google.com/maps/search/?api=1&amp;query=Dosis+Cafeter%C3%ADa+Concepci%C3%B3n+Chile" target="_blank" rel="noopener noreferrer">Buscar en Maps</a>
+        </div>
+        <div class="footer-hours">
+          <h2>Horario</h2>
+          <dl class="hours-list">
+            <div><dt>Lunes a viernes</dt><dd>10:00 – 19:00</dd></div>
+            <div><dt>Sábado</dt><dd>10:00 – 15:00</dd></div>
+            <div class="is-closed"><dt>Domingo</dt><dd>Cerrado</dd></div>
+          </dl>
         </div>
       </div>
       <div class="footer-bottom">
